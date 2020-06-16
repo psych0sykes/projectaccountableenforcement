@@ -1,6 +1,11 @@
+@font-face{
+    font-family: "Monteserrat";
+    src: url("/fonts/Montserrat-Light.ttf")
+
+}
 * {
     color: #eee;
-    font-family: 'Gill Sans';
+    font-family: 'Monteserrat';
 }
 body{
     background-color: black;
