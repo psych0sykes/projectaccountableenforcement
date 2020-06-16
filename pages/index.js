@@ -8,7 +8,7 @@ export default function Home() {
         <ProjectTitle/>
         <ul>
           <li style={{width: "200px",marginTop: "150px",fontSize:"14pt"}}>
-            identifying racism and the unequal treatment of Black Citizens by American law enforcement
+            identifying racism and the biased use of force on Black Citizens by American law enforcement
           </li>
         </ul>
         <div style={{width: "25vw",height: "1px",backgroundColor: "white",marginTop: "25px"}}/>
