@@ -1,0 +1,30 @@
+* {
+    color: #eee;
+    font-family: 'Gill Sans';
+}
+body{
+    background-color: black;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 1vw solid #666;
+    box-shadow: 5vw 5vw #444;
+}
+h1 {
+    color: #ddd
+}
+h2 {
+    color: #888
+}
+.socialLink {
+    width: 50px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25%;
+}
+.socialLink:hover {
+    background-color: orangered;
+}
