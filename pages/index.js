@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <Section direction="column" align="center">
         <ProjectTitle/>
+        <div>part 1:</div>
         <ul>
           <li style={{width: "200px",marginTop: "15px",fontSize:"10pt"}}>
             identifying racism and the biased use of force on Black Citizens by American law enforcement
