@@ -15,7 +15,7 @@ export default function ProjectTitle() {
                 <h1 style={style}>Enforcement</h1>
                 <h2 style={style}>project</h2>
             </div>
-            <div style={{width: "35px",height: "1px"}}>
+            <div style={{width: "15px",height: "1px"}}>
             </div>
         </div>
     )
