@@ -13,10 +13,6 @@ body{
 a {
     text-decoration: none;
 }
-img {
-    border: 1vw solid #666;
-    box-shadow: 5vw 5vw #444;
-}
 h1 {
     color: #ddd
 }
