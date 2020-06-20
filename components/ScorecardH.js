@@ -12,7 +12,7 @@ export default function Scorecard(props){
             <div style={{fontSize: "16px",marginRight: "5px",width: "150px",}}>
                 {props.caption}
             </div>
-            <div style={{fontSize: "25px",textAlign: "center"}}>
+            <div style={{fontSize: "25px",textAlign: "center",width: "50px"}}>
                 {props.score}
             </div>
         </div>

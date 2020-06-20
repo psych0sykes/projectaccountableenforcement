@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Section direction="column" align="center">
         <ProjectTitle/>
-        <div style={{marginTop: "25px",fontSize: "22px"}}>part 1:</div>
+        <div style={{marginTop: "25px",fontSize: "22px"}}>part 1: identify</div>
         <ul>
           <li style={{width: "200px",marginTop: "15px",fontSize:"10pt"}}>
             identify racism and the excessive use of force on Black Citizens by American law enforcement
@@ -30,13 +30,13 @@ export default function Home() {
         <div style={{borderRadius: "300px",height: "150px",width: "150px",overflow: "hidden",padding:"50px",backgroundColor:"white",marginTop:"30px"}}>
           <img src="/blmFist.png" style={{backgroundColor: "white",width: "150px"}}/>
         </div>
-        <div style={{marginTop: "50px", width: "200px"}}>
-          Meaningful paragraph is going to go here this is the place I will put stuff
-        </div>
       </Section>
       <Section direction="column">
+        <div style={{marginTop: "50px", width: "250px",fontSize: "22px"}}>
+          A black person living in America is more likely to be...
+        </div>
         <ScorecardH score="3x" caption="killed by police"/>
-        <ScorecardH score="2.5x" caption="a victim of force"/>
+        <ScorecardH score="2.5x" caption="a victim of excessive force"/>
         <ScorecardH score="1.7x" caption="stopped on the street"/>
         <ScorecardH score="1.7x" caption="arrested"/>
         <ScorecardH score="1.4x" caption="pulled over"/>
