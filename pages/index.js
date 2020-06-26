@@ -2,6 +2,7 @@ import Section from "../components/Section";
 import ProjectTitle from "../components/ProjectTitle";
 import ScorecardV from "../components/ScorecardV";
 import ScorecardH from "../components/ScorecardH";
+import BioCard from "../components/BioCard";
 
 export default function Home() {
   return (
@@ -40,6 +41,20 @@ export default function Home() {
         <ScorecardH score="1.7x" caption="stopped on the street"/>
         <ScorecardH score="1.7x" caption="arrested"/>
         <ScorecardH score="1.4x" caption="pulled over"/>
+      </Section>
+      <Section direction="column">
+        <div style={{width: "25vw",height: "1px",backgroundColor: "white",marginTop: "25px",marginBottom:"25px"}}/>
+        <Section>
+          <BioCard img="/breonaTaylor.jpg">
+            Three officers shot and killed Breonna Taylor in her bed after breaking into her home.
+          </BioCard>
+          <BioCard img="/elijahMcClain.jpg" imageSize="200px" offset="25px">
+            Police beat and killed 23 year old Elijah McClain as he begged for them to stop. He was unarmed.
+          </BioCard>
+          <BioCard img="rayshardBrooks.jpg" imageSize="150px" offset="0px">
+            Rayshard Brooks was shot twice in the back by police who refused to let him sleep in his car.
+          </BioCard>
+        </Section>
       </Section>
     </div>
   )
