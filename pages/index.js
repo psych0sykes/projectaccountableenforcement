@@ -3,8 +3,10 @@ import ProjectTitle from "../components/ProjectTitle";
 import ScorecardV from "../components/ScorecardV";
 import ScorecardH from "../components/ScorecardH";
 import BioCard from "../components/BioCard";
+import { useState } from "react";
 
 export default function Home() {
+
   return (
     <div>
       <Section direction="column" align="center">
@@ -36,11 +38,11 @@ export default function Home() {
         <div style={{marginTop: "50px", width: "250px",fontSize: "22px"}}>
           A black person living in America is more likely to be...
         </div>
-        <ScorecardH score="3x" caption="killed by police"/>
-        <ScorecardH score="2.5x" caption="a victim of excessive force"/>
-        <ScorecardH score="1.7x" caption="stopped on the street"/>
-        <ScorecardH score="1.7x" caption="arrested"/>
-        <ScorecardH score="1.4x" caption="pulled over"/>
+        <ScorecardH score="3x" caption="killed by police" table={[["test","data","here"],[1,2,3]]}/>
+        <ScorecardH score="2.5x" caption="a victim of excessive force" table={[["test","data","here"],[1,2,3]]}/>
+        <ScorecardH score="1.7x" caption="stopped on the street" table={[["test","data","here"],[1,2,3]]}/>
+        <ScorecardH score="1.7x" caption="arrested" table={[["test","data","here"],[1,2,3]]}/>
+        <ScorecardH score="1.4x" caption="pulled over" table={[["test","data","here"],[1,2,3]]}/>
       </Section>
       <Section direction="column">
         <div style={{width: "25vw",height: "1px",backgroundColor: "white",marginTop: "25px",marginBottom:"25px"}}/>
