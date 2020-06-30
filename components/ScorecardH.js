@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Scorecard(props){
 
-    const [open,setOpen] = useState(true);
+    const [open,setOpen] = useState(false);
 
     const style={
         margin: "10px",
