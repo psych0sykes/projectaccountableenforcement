@@ -15,15 +15,26 @@ export default function Scorecard(props){
 
         const TableMap = ()=>{
             return(
-            props.table.map((row) => {
-                return(<tr>
-                    {row.map((data) => {
-                        return(<td>
-                            {data}
-                        </td>)
-                    })}
-                </tr>)})
-            );
+            props.table.map((row,index) => {
+                if(index===0){
+                    return(<tr key={index}>
+                        {row.map((data,index) => {
+                            return(<th key={index}>
+                                {data}
+                            </th>)
+                        })}
+                    </tr>)}
+                else{
+                    return(<tr key={index}>
+                        {row.map((data,index) => {
+                            return(<td key={index}>
+                                {data}
+                            </td>)
+                        })}
+                    </tr>)
+                }
+                
+            }))
         };
 
         if(props.table){
