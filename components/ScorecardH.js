@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Section from "./Section";
 
 export default function Scorecard(props){
 
@@ -39,11 +40,16 @@ export default function Scorecard(props){
 
         if(props.table){
             return(
-                <table>
-                    <tbody>
-                        <TableMap/>
-                    </tbody>
-                </table>
+                <Section direction={"column"}>
+                    <div style={{marginTop: "25px"}}>
+                        {props.title}
+                    </div>
+                    <table>
+                        <tbody>
+                            <TableMap/>
+                        </tbody>
+                    </table>
+                </Section>
             )
         }else{
             return(
