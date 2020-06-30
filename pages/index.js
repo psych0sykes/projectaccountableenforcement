@@ -38,7 +38,7 @@ export default function Home() {
         <div style={{marginTop: "50px", width: "250px",fontSize: "22px"}}>
           A black person living in America is more likely to be...
         </div>
-        <ScorecardH score="3x" caption="killed by police" table={[["test","data","here"],[1,2,3]]}/>
+        <ScorecardH score="3x" caption="killed by police" table={[["test","data","here"],[2,2,3]]}/>
         <ScorecardH score="2.5x" caption="a victim of excessive force" table={[["test","data","here"],[1,2,3]]}/>
         <ScorecardH score="1.7x" caption="stopped on the street" table={[["test","data","here"],[1,2,3]]}/>
         <ScorecardH score="1.7x" caption="arrested" table={[["test","data","here"],[1,2,3]]}/>
