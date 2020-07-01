@@ -32,3 +32,39 @@ h2 {
 ul {
     margin: 0px;
 }
+tr {
+    margin: 5px;
+}
+th {
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+td {
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.fadeIn {
+    animation: fadeInBackground 8s 1;
+}
+footer {
+    margin-top: 100px;
+}
+.ninetyRight {
+    animation: ninetyRight 0.5s 1 forwards;
+}
+.ninetyLeft {
+    animation: ninetyLeft 0.5s 1 forwards;
+}
+@keyframes fadeInBackground {
+    from{background-color: black;}
+    to{background-color: white;}
+}
+@keyframes ninetyRight {
+    from{}
+    to{transform: rotate(-90deg)}
+}
+@keyframes ninetyLeft {
+    from{transform: rotate(-90deg)}
+    to{transform: rotate(0deg)}
+}

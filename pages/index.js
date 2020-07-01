@@ -30,19 +30,19 @@ export default function Home() {
         <ScorecardV score="60%" caption="use of force incidents were excessive"/>
       </Section>
       <Section direction="column">
-        <div style={{borderRadius: "300px",height: "150px",width: "150px",overflow: "hidden",padding:"50px",backgroundColor:"white",marginTop:"30px"}}>
-          <img src="/blmFist.png" style={{backgroundColor: "white",width: "150px"}}/>
+        <div className={"fadeIn"} style={{borderRadius: "300px",height: "150px",width: "150px",overflow: "hidden",padding:"50px",backgroundColor:"white",marginTop:"30px"}}>
+          <img src="/blmFist.png" style={{width: "150px"}}/>
         </div>
       </Section>
       <Section direction="column">
         <div style={{marginTop: "50px", width: "250px",fontSize: "22px"}}>
           A black person living in America is more likely to be...
         </div>
-        <ScorecardH score="3x" caption="killed by police" table={[["test","data","here"],[2,2,2]]}/>
-        <ScorecardH score="2.5x" caption="a victim of excessive force" table={[["test","data","here"],[1,2,3]]}/>
-        <ScorecardH score="1.7x" caption="stopped on the street" table={[["test","data","here"],[1,2,3]]}/>
-        <ScorecardH score="1.7x" caption="arrested" table={[["test","data","here"],[1,2,3]]}/>
-        <ScorecardH score="1.4x" caption="pulled over" table={[["test","data","here"],[1,2,3]]}/>
+        <ScorecardH score="3x" caption="killed by police"/>
+        <ScorecardH score="2.5x" caption="a victim of police use of force" title={"Contact with Police involving Use of Force"} table={[["Race","%","Factor"],["Black","3.3%","2.54"],["Hispanic","3%","2.31"],["Other","2.9%","2.23"],["White","1.3%","1"]]}/>
+        <ScorecardH score="1.7x" caption="stopped on the street"/>
+        <ScorecardH score="1.7x" caption="arrested"/>
+        <ScorecardH score="1.4x" caption="pulled over"/>
       </Section>
       <Section direction="column">
         <div style={{width: "25vw",height: "1px",backgroundColor: "white",marginTop: "25px",marginBottom:"25px"}}/>
@@ -58,6 +58,7 @@ export default function Home() {
           </BioCard>
         </Section>
       </Section>
+      <footer></footer>
     </div>
   )
 };
