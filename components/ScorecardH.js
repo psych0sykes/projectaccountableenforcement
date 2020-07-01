@@ -70,10 +70,16 @@ export default function Scorecard(props){
         }
     };
 
+    const handleClick = ()=>{
+        if(props.table){
+            setOpen(!open)
+        }
+    }
+
     return(
         <div>
-            <div style={style} onClick={()=>setOpen(!open)}>
-                <div>
+            <div style={style} onClick={handleClick}>
+                <div style={{display: props.table ? "block" : "none"}}>
                     <img src="/arrow.png" style={{width: "10px",marginRight: "8px"}} className={open ? "ninetyLeft" : "ninetyRight"}/>
                 </div>
                 <div style={{fontSize: "16px",marginRight: "5px",width: "150px",color: open ? "yellow" : "white"}}>
