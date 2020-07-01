@@ -49,6 +49,7 @@ export default function Scorecard(props){
                             <TableMap/>
                         </tbody>
                     </table>
+                    <div style={{marginBottom: "25px"}}></div>
                 </Section>
             )
         }else{
@@ -72,7 +73,7 @@ export default function Scorecard(props){
     return(
         <div onClick={()=>setOpen(!open)}>
             <div style={style}>
-                <div style={{fontSize: "16px",marginRight: "5px",width: "150px",}}>
+                <div style={{fontSize: "16px",marginRight: "5px",width: "150px",color: open ? "yellow" : "white"}}>
                     {props.caption}
                 </div>
                 <div style={{fontSize: "25px",textAlign: "center",width: "50px"}}>
