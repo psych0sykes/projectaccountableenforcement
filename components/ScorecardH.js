@@ -71,8 +71,11 @@ export default function Scorecard(props){
     };
 
     return(
-        <div onClick={()=>setOpen(!open)}>
-            <div style={style}>
+        <div>
+            <div style={style} onClick={()=>setOpen(!open)}>
+                <div>
+                    <img src="/arrow.png" style={{width: "10px",marginRight: "8px"}} className={open ? "ninetyLeft" : "ninetyRight"}/>
+                </div>
                 <div style={{fontSize: "16px",marginRight: "5px",width: "150px",color: open ? "yellow" : "white"}}>
                     {props.caption}
                 </div>
