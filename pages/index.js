@@ -7,6 +7,8 @@ import { useState } from "react";
 
 export default function Home() {
 
+
+
   return (
     <div>
       <Section direction="column" align="center">
@@ -38,9 +40,9 @@ export default function Home() {
         <div style={{marginTop: "50px", width: "250px",fontSize: "22px"}}>
           A black person living in America is more likely to be...
         </div>
-        <ScorecardH score="3x" caption="killed by police"/>
+        <ScorecardH score="2.6x" caption="killed by police" title="Police Killings per 1MM People" table={[["Race","Homicide Rate","Factor"],["Black","6.6","2.64"],["Hispanic","3.8","1.54"],["White","2.5","1"]]}/>
         <ScorecardH score="2.5x" caption="a victim of police use of force" title={"Contact with Police involving Use of Force"} table={[["Race","%","Factor"],["Black","3.3%","2.54"],["Hispanic","3%","2.31"],["Other","2.9%","2.23"],["White","1.3%","1"]]}/>
-        <ScorecardH score="1.7x" caption="stopped on the street"/>
+        <ScorecardH score="1.7x" caption="stopped on the street" title={"Police initiated Street Stops"} table={[["Race","%","Factor"],["Black","1.5%","1.66"],["Other","1.1%","1.11"],["Hispanic","0.9%","1"],["White","0.9%","1"]]}/>
         <ScorecardH score="1.7x" caption="arrested"/>
         <ScorecardH score="1.4x" caption="pulled over"/>
       </Section>
